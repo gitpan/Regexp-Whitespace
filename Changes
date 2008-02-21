@@ -1,0 +1,6 @@
+Revision history for Regexp-Whitespace.
+
+0.001_0  Mon Feb 21 2008
+        - first release to CPAN
+        - only simple things like qr/a b c/ works
+

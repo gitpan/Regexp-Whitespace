@@ -1,0 +1,42 @@
+NAME
+    Regexp::Whitespace - Whitespace insensitivity for regexes
+
+SYNOPSIS
+        use Regexp::Whitespace ();
+
+        my $re = Regexp::Whitespace->new( 'a b c', 'w' );
+
+        "a   b\t\n c" =~ $re; # true
+
+DESCRIPTION
+        THIS IS A pre-alpha RELEASE.
+
+    This module implements a /w modifier for regexes that provides
+    whitespace insensitivity.
+
+      qr/a b c/w    => qr/a\s+b\s+c/
+
+  LIMITATIONS SO FAR
+
+      * only supports a global 'w' modifier by now
+      * only exact pieces are handled by now
+        (which means things like / [ x] /xw are not transformed into
+           / (?: \s+ | [x] ) /x
+
+SEE ALSO
+      perlre
+      perlrecharclass (since Perl 5.10)
+
+BUGS
+    Please report bugs via CPAN RT
+    http://rt.cpan.org/NoAuth/Bugs.html?Dist=Regexp-Whitespace or mailto:.
+
+AUTHORS
+    Adriano R. Ferreira, <ferreira@cpan.org>
+
+COPYRIGHT AND LICENSE
+    Copyright (C) 2008 by Adriano R. Ferreira
+
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+

@@ -1,0 +1,18 @@
+
+Build.PL
+README
+Changes
+Makefile.PL
+
+lib/Regexp/Whitespace.pm
+lib/Regexp/Whitespace.pod
+lib/Regexp/Whitespace/Builder.pm
+lib/Regexp/Whitespace/Parser.pm
+MANIFEST			This list of files
+
+eg/extract_date.pl
+
+t/01use.t
+t/02basic.t
+
+META.yml

@@ -1,0 +1,56 @@
+---
+name: Regexp-Whitespace
+version: 0.001_0
+author:
+  - 'Adriano R. Ferreira, E<lt>ferreira@cpan.orgE<gt>'
+abstract: Whitespace insensitivity for regexes
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  Attribute::Memoize: 0
+  Clone: 0.28
+  Scalar::Util: 0
+  YAPE::Regex: 3.03
+  charnames: 0
+  constant: 0
+  if: 0
+  overload: 0
+  perl: 5.008
+  strict: 0
+  warnings: 0
+build_requires:
+  Test::More: 0
+  ok: 0
+provides:
+  Regexp::Whitespace:
+    file: lib/Regexp/Whitespace.pm
+    version: 0.001_0
+  Regexp::Whitespace::Builder:
+    file: lib/Regexp/Whitespace/Builder.pm
+    version: 0.001_0
+  Regexp::Whitespace::Parser:
+    file: lib/Regexp/Whitespace/Parser.pm
+    version: 0.001_0
+  Regexp::Whitespace::Parser::Element:
+    file: lib/Regexp/Whitespace/Parser.pm
+  Regexp::Whitespace::Parser::container:
+    file: lib/Regexp/Whitespace/Parser.pm
+  Regexp::Whitespace::Parser::ctrl:
+    file: lib/Regexp/Whitespace/Parser.pm
+  Regexp::Whitespace::Parser::exact:
+    file: lib/Regexp/Whitespace/Parser.pm
+  Regexp::Whitespace::Parser::hex:
+    file: lib/Regexp/Whitespace/Parser.pm
+  Regexp::Whitespace::Parser::named:
+    file: lib/Regexp/Whitespace/Parser.pm
+  Regexp::Whitespace::Parser::oct:
+    file: lib/Regexp/Whitespace/Parser.pm
+  Regexp::Whitespace::Parser::slash:
+    file: lib/Regexp/Whitespace/Parser.pm
+  Regexp::Whitespace::Parser::text:
+    file: lib/Regexp/Whitespace/Parser.pm
+generated_by: Module::Build version 0.280801
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
